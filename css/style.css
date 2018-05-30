@@ -62,13 +62,16 @@ background: rgba(173, 37, 30, 0.4);
   height: 300px;
 }
 .panel-body.carte{
-  height: 650px;
+  height: auto;
 }
 .panel-body.perso {
   height: 250px;
 }
 .panel-body.boissons {
   height: 320px;
+}
+.panel-body.form {
+  height: auto;
 }
 .badge-custom {
   background: #635F56;
@@ -183,7 +186,7 @@ img {vertical-align: middle;}
 .restau {
   position: relative;
   top: 150px;
-  height: 400px;
+  height: 500px;
   background: rgba(232, 90, 41, 0.3);
   color: white;
   text-align: center;
