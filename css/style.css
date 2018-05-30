@@ -20,31 +20,20 @@ body {
      while the background image is loading */
   background-color: #464646;
 }
+
 .navbar {
 
     height: 40px;
-    position: fixed;
     top: 0;
-    background: black;
-    color: white;
-    width: 100%;;
+    width: 100%;
+    
     }
-  .header {
-    background: black;
-    color: white;
-  }
-  .navbar a{
-    color: white;
-  }
-  .navbar a:hover {
-    background: red;
-    color: black;
-  }
+  
 .jumbotron {
-  position: relative;
+  
   top: 150px;
-  height: 400px;
-  background: rgba(232, 90, 41, 0.3);
+  height: auto;
+  background: rgba(173, 11, 0, 0.7);
   color: white;
   text-align: center;
 }
@@ -59,7 +48,7 @@ body {
 background: rgba(173, 37, 30, 0.4);
 }
 .panel-body {
-  height: 300px;
+  height: auto;
 }
 .panel-body.carte{
   height: auto;
@@ -76,17 +65,17 @@ background: rgba(173, 37, 30, 0.4);
 .badge-custom {
   background: #635F56;
 }
-.fixed-bottom {
+/*.fixed-bottom {
   position: fixed;
   bottom: 0;
   background: black;
   color: white;
   font-size: 15px;
   width: 100%;
-/* box-sizing: content-box; */
+ box-sizing: content-box; 
 margin-left: -15px;
 text-align: left;
-}
+}*/
 .mySlides {display: none}
 img {vertical-align: middle;}
 
