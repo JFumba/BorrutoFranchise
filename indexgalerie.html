@@ -30,7 +30,7 @@
               </ul>
             </div>
           </nav>
-   <div class="container text-center my-3">
+   <!--<div class="container text-center my-3">
     <h2>Un bref aperçu de nos produits</h2>
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -83,7 +83,112 @@
         </div>
     </div>
     <h4>Advances one slide at a time</h4>
+</div>-->
+<h2 style="text-align:center">Un bref aperçu de nos produits</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="./images/Sushi-Burrito-teriyaki.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="./images/Sushi-Burrito-redcab.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img src="./images/Sushi-Burrito-vege1.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="./images/Quinoa-bowl.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="./images/Sushi-Bowl.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img src="./images/Sushi-Bowl3.jpeg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="./images/onigirazu1.jpeg" style="width:50%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img src="./images/onigirazu2.jpeg" style="width:50%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img src="./images/onigirazu3.jpeg" style="width:50%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="./images/bubbletea.jpeg" style="width:50%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img src="./images/coldbrew.jpeg" style="width:50%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="./images/icedtea.jpeg" style="width:50%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./images/Sushi-Burrito-teriyaki.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Sushi Burrito">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Sushi-Burrito-redcab.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Sushi Burrito">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Sushi-Burrito-vege1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Sushi Burrito">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Quinoa-bowl.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Quinoa Bowl">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Sushi-Bowl.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Sushi Bowl">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Sushi-Bowl3.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Sushi Bowl">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/onigirazu1.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Onigirazu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/onigirazu2.jpeg" style="width:100%" onclick="currentSlide(8)" alt="Onigirazu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/onigirazu3.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Onigirazu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/bubbletea.jpeg" style="width:100%" onclick="currentSlide(10)" alt="Bubble Tea">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/coldbrew.jpeg" style="width:100%" onclick="currentSlide(11)" alt="Cold Brew Coffee">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/icedtea.jpeg" style="width:100%" onclick="currentSlide(12)" alt="Iced Tea">
+    </div>
+  </div>
 </div>
+
+
 <style>
 .footer {
     position: fixed;
@@ -129,10 +234,10 @@
           dots[slideIndex-1].className += " active";
         }
 </script>-->
-<script
+<!--<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">   
+  crossorigin="anonymous">
         $('#recipeCarousel').carousel({
   interval: 10000
 })
@@ -143,7 +248,7 @@ $('.carousel .carousel-item').each(function(){
     next = $(this).siblings(':first');
     }
     next.children(':first-child').clone().appendTo($(this));
-    
+
     if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
     }
@@ -151,6 +256,36 @@ $('.carousel .carousel-item').each(function(){
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
 });
+</script>-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
 </body>
 </html>
