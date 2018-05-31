@@ -1,103 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="sushi burrito restaurants">
-    <meta name="keywords" content="sushi,burrito,onigirazu,bowl,bubble tea">
-    <meta name="author" content="Jesse Fumba">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Borruto</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="sushi burrito restaurants">
+      <meta name="keywords" content="sushi,burrito,onigirazu,bowl,bubble tea">
+      <meta name="author" content="Jesse Fumba">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Borruto</title>
+      <!-- css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
       <div class="topnav" id="myTopnav">
-  <a href="index.html">Home</a>
-  <a href="indexcarte.html">Menu</a>
-  <a href="indexgalerie.html">Galerie</a>
-  <a href="indexrestau.html">Restaurants</a>
-  <a href="indexcontact.html" class="active">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-    <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-md-3"></div>
-      <div class="col-xs-12 col-md-6">
-        <div class="panel panel-default">
-  <div class="panel-body form">
-        <form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Nom</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="votre nom">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Prénom</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="votre prénom">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Adresse email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nom@exemple.com">
-  </div>
-
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">type de message</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>réservation</option>
-      <option>demande d'information</option>
-      <option>suggestions</option>
-      <option>réclamations</option>
-      <option>autre</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Sujet</label>
-    <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="optionnel">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Contenu du message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-  </div>
-  <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size:40px;"></span></a>
-
-</form>
-</div>
-</div>
+         <a href="index.html">Home</a>
+         <a href="indexcarte.html">Menu</a>
+         <a href="indexgalerie.html">Galerie</a>
+         <a href="indexrestau.html">Restaurants</a>
+         <a href="indexcontact.html" class="active">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
       </div>
-      <div class="col-xs-12 col-md-3"></div>
-    </div>
-
-    </div>
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
-    <style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-    color: white;
-    text-align: center;
-}
-</style>
-
-<div class="footer">
-  <p id="copyright">© Jesse Fumba 2018</p>
-</div>
-</body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-12 col-md-3"></div>
+            <div class="col-xs-12 col-md-6">
+               <div class="panel panel-default">
+                  <div class="panel-body form">
+                     <form>
+                        <div class="form-group">
+                           <label for="exampleFormControlInput1">Nom</label>
+                           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="votre nom">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleFormControlInput1">Prénom</label>
+                           <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="votre prénom">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleFormControlInput1">Adresse email</label>
+                           <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nom@exemple.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleFormControlSelect1">type de message</label>
+                           <select class="form-control" id="exampleFormControlSelect1">
+                              <option>réservation</option>
+                              <option>demande d'information</option>
+                              <option>suggestions</option>
+                              <option>réclamations</option>
+                              <option>autre</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleFormControlInput1">Sujet</label>
+                           <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="optionnel">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleFormControlTextarea1">Contenu du message</label>
+                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                        <a href="#"><span class="glyphicon glyphicon-envelope" style="font-size:40px;"></span></a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3"></div>
+         </div>
+      </div>
+      <script>
+         function myFunction() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "topnav") {
+                 x.className += " responsive";
+             } else {
+                 x.className = "topnav";
+             }
+         }
+      </script>
+      <style>
+         .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         color: white;
+         text-align: center;
+         }
+      </style>
+      <div class="footer">
+         <p id="copyright">© Jesse Fumba 2018</p>
+      </div>
+   </body>
 </html>
